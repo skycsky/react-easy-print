@@ -1,5 +1,5 @@
 {
-  "name": "@glamering/react-print",
+  "name": "@skycsky/react-print",
   "description": "Powerful react component for easy printing",
   "main": "build",
   "scripts": {
