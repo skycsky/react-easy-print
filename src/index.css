@@ -9,10 +9,17 @@
     visibility: visible; /* visible element even nested in the hidden one */
   }
   .print._main {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+
+  .print._break {
     position: relative;
     left: 0;
     top: 0;
   }
+
   .print._exclusive {
     display: block;
   }

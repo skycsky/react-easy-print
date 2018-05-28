@@ -1,5 +1,5 @@
 {
-  "name": "react-easy-print",
+  "name": "@glamering/react-print",
   "description": "Powerful react component for easy printing",
   "main": "build",
   "scripts": {
@@ -7,7 +7,7 @@
   },
   "repository": "git@github.com:a-x-/react-easy-print.git",
   "author": "Alex Mextner <alex@rocketguys.com>",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.2",

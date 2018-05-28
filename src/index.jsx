@@ -102,10 +102,13 @@ export class Print extends React.PureComponent {
     }
   }
   render () {
-    const { children, main, exclusive } = this.props;
-    const main_ = main ? s.main : '';
+    const { children, main, exclusive, pageBreak } = this.props;
+    let main_ = main ? s.main : '';
     const excl_ = exclusive ? s.exclusive : '';
-    return <div className={`${ s.print } ${ main_ } ${ excl_ }`}>{ children }</div>;
+    if (pageBreak) {
+      main_ = s.break;
+    }
+    return <div id='printArea' className={`${ s.print } ${ main_ } ${ excl_ }`}>{ children }</div>;
   }
 }
 Print.propTypes = {
@@ -113,6 +116,8 @@ Print.propTypes = {
   children: PropTypes.node.isRequired,
   main: PropTypes.bool,
   exclusive: PropTypes.bool,
+  pageBreak: PropTypes.bool,
+
 };
 Print.contextTypes = PrintProvider.childContextTypes;
 
